@@ -6,7 +6,7 @@
 		return this.each(function()
 		{
 			_this = $(this);
-			_this.data('shadow-gallery-options', options);
+			_this.data('shadowthumb-options', options);
 			
 			if (options.thumbnails)
 			{
@@ -55,7 +55,7 @@
 		thumbnails: true,
 		shadowbox: true,
 		shadowboxOptions: { },
-		galleryId: 'shadow-gallery',
+		galleryId: 'shadowthumb',
 		thumbnailClass: 'thumbnail'
 	};
 	
@@ -63,7 +63,7 @@
 	{
 		return this.filter('img').each(function()
 		{
-			renderThumbnail(this, false, this.data('shadow-gallery-options'));
+			renderThumbnail(this, false, this.data('shadowthumb-options'));
 		});
 	};
 	
