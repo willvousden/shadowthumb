@@ -1,8 +1,8 @@
 (function($)
 {
-	$.fn.shadowThumbs = function(options)
+	$.fn.shadowthumb = function(options)
 	{
-		options = $.extend({ }, $.fn.shadowThumbs.defaults, options);
+		options = $.extend({ }, $.fn.shadowthumb.defaults, options);
 		return this.each(function()
 		{
 			_this = $(this);
@@ -49,7 +49,7 @@
 		});
 	};
 	
-	$.fn.shadowThumbs.defaults =
+	$.fn.shadowthumb.defaults =
 	{
 		links: true,
 		thumbnails: true,
